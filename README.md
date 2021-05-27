@@ -1,4 +1,4 @@
-# CV_Project_wht
+# CV_Project_wenht
 
 The codes of my CV Project.
 
