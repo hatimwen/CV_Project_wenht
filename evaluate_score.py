@@ -68,7 +68,7 @@ def main():
     score = validate(test_loader, model)
     if args.cuda:
         score = score.cpu().numpy()
-        score = score.numpy()
+        # score = score.numpy()
 
     # write scores to a csv file
     print('Wrinting scores to test_score.csv.......')

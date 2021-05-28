@@ -1,7 +1,7 @@
 ### 5.1Se_ResNext_Adam_lr0.001
 python main.py \
 --lr 0.001 \
---data ../../datasets/CV_project \
+--data # datapath \
 --arch se_resnext_3474 \
 --result Results_5.1Se_ResNext_Adam_lr0.001 \
 --crop-size 64 \

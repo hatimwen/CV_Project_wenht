@@ -1,7 +1,7 @@
 ### 3.3Se_ResNext_RandomRotate
 python main.py \
 --lr 0.1 \
---data ../../datasets/CV_project \
+--data # datapath \
 --arch se_resnext_3474 \
 --result Results_3.3Se_ResNext_RandomRotate \
 --crop-size 64 \

@@ -39,6 +39,8 @@ parser.add_argument('--pretrained', default=False, type=bool, help='whether pret
 parser.add_argument('--finetune', default=False, type=bool, help='whether finetune is in use.') #wht
 parser.add_argument('--pth', default='',
                     type=str, metavar='PATH', help='optionally pretrain or finetune from a checkpoint (default: none)')   # wht
+parser.add_argument('--tpth', default='',
+                    type=str, metavar='PATH', help='optionally pretrain or finetune from a checkpoint (default: none)')   # wht
 
 # train
 parser.add_argument('--lr', '--learning-rate', default=0.1, type=float, metavar='LR',
@@ -118,7 +120,7 @@ def main():
     para_dict['temperature'] = args.T
     if args.kdarch:
         t_modeltype = globals()[args.kdarch]
-        teacher_model = t_modeltype(num_classes=args.num_classes, pretrained=True)
+        teacher_model = t_modeltype(num_classes=args.num_classes, pretrained=True, pth=args.tpth)
         t_criterion = KDLoss(para_dict=para_dict)
     else:
         raise KeyError('KD teacher model {} is not achieved'.format(args.kdarch))

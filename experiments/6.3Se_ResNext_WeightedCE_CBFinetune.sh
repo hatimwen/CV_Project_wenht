@@ -1,7 +1,7 @@
 ### 6.3Se_ResNext_WeightedCE_CBFinetune
 python main.py \
 --lr 0.001 \
---data ../../datasets/CV_project \
+--data # datapath \
 --arch se_resnext_3474 \
 --result Results_6.3Se_ResNext_WeightedCE_CBFinetune \
 --crop-size 64 \
