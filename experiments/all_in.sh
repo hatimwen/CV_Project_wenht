@@ -3,7 +3,7 @@
 ### train se_resnext_3474 with many many tricks first:
 python main.py \
 --lr 0.1 \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --result ./Results_final \
 --crop-size 64 \
@@ -18,7 +18,7 @@ python main.py \
 
 ### then, train(finetune) se_resnext_3474 with kd:
 python main_kd.py \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --kdarch resnet101_t \
 --result ./Results_final_kd \
@@ -35,7 +35,7 @@ python main_kd.py \
 ### lastly, finetune with ClassBalance:
 python main.py \
 --lr 0.001 \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --result ./Results_final_finetune \
 --crop-size 64 \

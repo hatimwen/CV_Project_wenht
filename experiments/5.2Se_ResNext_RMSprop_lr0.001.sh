@@ -1,7 +1,7 @@
 ### 5.2Se_ResNext_RMSprop_lr0.001
 python main.py \
 --lr 0.001 \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --result Results_5.2Se_ResNext_RMSprop_lr0.001 \
 --crop-size 64 \

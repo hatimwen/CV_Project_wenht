@@ -1,7 +1,7 @@
 ### 5.1Se_ResNext_Adam_lr0.01
 python main.py \
 --lr 0.01 \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --result Results_5.1Se_ResNext_Adam_lr0.01 \
 --crop-size 64 \

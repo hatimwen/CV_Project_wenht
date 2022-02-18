@@ -1,7 +1,7 @@
 ### 2.2Se_ResNext_step160
 python main.py \
 --lr 0.1 \
---data \
+--data ./data \
 --arch se_resnext_3474 \
 --result Results_2.2Se_ResNext_step160 \
 --crop-size 64 \
