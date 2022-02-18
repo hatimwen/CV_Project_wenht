@@ -1,7 +1,7 @@
 ### 3.1Se_ResNext_CutOut
 python main.py \
 --lr 0.1 \
---data # datapath \
+--data \
 --arch se_resnext_3474 \
 --result Results_3.1Se_ResNext_CutOut \
 --crop-size 64 \

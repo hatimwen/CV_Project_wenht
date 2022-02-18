@@ -1,7 +1,7 @@
 ### 6.1Se_ResNext_WeightedCE
 python main.py \
 --lr 0.1 \
---data # datapath \
+--data \
 --arch se_resnext_3474 \
 --result Results_6.1Se_ResNext_WeightedCE \
 --crop-size 64 \

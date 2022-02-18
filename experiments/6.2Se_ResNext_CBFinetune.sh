@@ -1,7 +1,7 @@
 ### 6.2Se_ResNext_CBFinetune
 python main.py \
 --lr 0.001 \
---data # datapath \
+--data \
 --arch se_resnext_3474 \
 --result Results_6.2Se_ResNext_CBFinetune \
 --crop-size 64 \

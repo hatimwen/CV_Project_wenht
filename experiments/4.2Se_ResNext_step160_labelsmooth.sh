@@ -1,7 +1,7 @@
 ### 4.2Se_ResNext_step160_labelsmooth
 python main.py \
 --lr 0.1 \
---data # datapath \
+--data \
 --arch se_resnext_3474 \
 --result Results_4.2Se_ResNext_step160_labelsmooth \
 --crop-size 64 \

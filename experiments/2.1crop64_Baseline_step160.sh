@@ -1,7 +1,7 @@
 ### 2.1crop64_Baseline_step160
 python main.py \
 --lr 0.1 \
---data # datapath \
+--data \
 --arch resnet35 \
 --result Results_2.1crop64_Baseline_step160 \
 --crop-size 64 \
